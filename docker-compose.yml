@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  chatroom:
+    build: .
+    ports:
+      - "7777:6767"
+    environment:
+      - CALC_PORT=6767
+      - MAX_USERS=20
